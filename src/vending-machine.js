@@ -1,5 +1,3 @@
-const processData = require("./process-data");
-
 class VendingMachine {
   constructor(inventory, cash) {
     this.inventory = inventory;
@@ -10,9 +8,14 @@ class VendingMachine {
     return this.inventory;
   }
 
-  //   dispenseInv(product, payment) {
-  //     //   if (),
-  //   }
+  dispenseInv(product, payment) {
+    if (this.inventory[product].quantity < 1) {
+      return "Out of stock";
+    }
+    if (this.inventory[product].quantity < 1) {
+      return "Out of stock";
+    }
+  }
 
   //   () {
   //     return this.data.demographics;
@@ -22,4 +25,4 @@ class VendingMachine {
   //   }
 }
 
-module.exports = StudentStats;
+module.exports = VendingMachine;
