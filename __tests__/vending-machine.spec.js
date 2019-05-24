@@ -1,45 +1,21 @@
 const VendingMachine = require("../src/vending-machine");
+const inventory = require("../src/inventory");
+const cash = require("../src/cash");
 
 describe("VendingMachine", () => {
-    const 
+  let vendingMachine = [];
   beforeEach(() => {
-    const inventory = [
-      {
-        product: "Ice Cream Tub",
-        quantity: 10,
-        price: 5.2
-      },
-      {
-        product: "Razor",
-        quantity: 10,
-        price: 3.25
-      },
-      {
-        product: "Razor",
-        quantity: 10,
-        price: 3.25
-      },
-      {
-        product: "shampoo",
-        quantity: 10,
-        price: 3.25
-      }
-    ];
+    vendingMachine = new VendingMachine(inventory, cash);
   }); //beforeEach gets called everytime before a test is run
 
-  describe("when ", () => {
-    beforeEach(() => {
-         = new VendingMachine(inventory); 
+  describe("when asked for inventory", () => {
+    it("should return inventory object", () => {
+      expect(vendingMachine.printInv()).toEqual(inventory);
     });
-    it("should tell me the % of the students ", () => {
-      expect(test.result.passPercentage).toEqual(
-        test.projectData.passPercentage
-      );
-    });
-
-    it("should tell me the satisfaction level of the students that passed ", () => {
-      expect(test.result.passSatisfaction).toEqual(
-        test.projectData.passSatisfaction
-      );
-    });
+  });
+  //   describe("when asked for inventory", () => {
+  //     it("should return inventory object", () => {
+  //       expect(vendingMachine.printInv()).toEqual(inventory);
+  //     });
+  //   });
 });
