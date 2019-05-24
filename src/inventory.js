@@ -1,22 +1,28 @@
-const inventory = [
-  {
-    product: "Ice Cream Tub",
+const inventory = {
+  soap: {
     quantity: 10,
     price: 5.2
   },
-  {
-    product: "Razor",
+  razor: {
     quantity: 10,
     price: 3.25
   },
-  {
-    product: "Razor",
+  candle: {
     quantity: 10,
-    price: 3.25
+    price: 11.0
   },
-  {
-    product: "shampoo",
+  diffuser: {
     quantity: 10,
-    price: 3.25
+    price: 21.2
+  },
+  chocolate: {
+    quantity: 10,
+    price: 2.5
+  },
+  mixtape: {
+    quantity: 10,
+    price: 9.0
   }
-];
+};
+
+module.exports = inventory;
