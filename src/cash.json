@@ -1,0 +1,22 @@
+{
+  "nickels": {
+    "value": 0.05,
+    "quantity": 10
+  },
+  "dimes": {
+    "value": 0.1,
+    "quantity": 10
+  },
+  "quarters": {
+    "value": 0.1,
+    "quantity": 10
+  },
+  "loonies": {
+    "value": 1.0,
+    "quantity": 10
+  },
+  "toonies": {
+    "value": 2.0,
+    "quantity": 10
+  }
+}
