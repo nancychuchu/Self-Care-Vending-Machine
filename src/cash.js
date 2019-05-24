@@ -5,3 +5,5 @@ const cash = {
   loonies: 10,
   toonies: 10
 };
+
+module.exports = cash;
