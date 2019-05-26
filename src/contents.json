@@ -1,0 +1,108 @@
+{
+    "inventory": {
+        "soap": {
+            "quantity": 10,
+            "price": 5.2
+        },
+        "razor": {
+            "quantity": 10,
+            "price": 3.25
+        },
+        "candle": {
+            "quantity": 10,
+            "price": 11.0
+        },
+        "diffuser": {
+            "quantity": 10,
+            "price": 21.2
+        },
+        "chocolate": {
+            "quantity": 10,
+            "price": 2.5
+        },
+        "mixtape": {
+            "quantity": 10,
+            "price": 9.0
+        },
+        "loofa": {
+            "quantity": 0,
+            "price": 9.0
+        }
+    },
+
+    "fullInventory": {
+        "soap": {
+            "quantity": 15,
+            "price": 5.2
+        },
+        "razor": {
+            "quantity": 15,
+            "price": 3.25
+        },
+        "candle": {
+            "quantity": 15,
+            "price": 11.0
+        },
+        "diffuser": {
+            "quantity": 15,
+            "price": 21.2
+        },
+        "chocolate": {
+            "quantity": 15,
+            "price": 2.5
+        },
+        "mixtape": {
+            "quantity": 15,
+            "price": 9.0
+        },
+        "loofa": {
+            "quantity": 15,
+            "price": 9.0
+        }
+    },
+
+    "cash": {
+        "nickels": {
+            "value": 0.05,
+            "quantity": 10
+        },
+        "dimes": {
+            "value": 0.1,
+            "quantity": 10
+        },
+        "quarters": {
+            "value": 0.1,
+            "quantity": 10
+        },
+        "loonies": {
+            "value": 1.0,
+            "quantity": 10
+        },
+        "toonies": {
+            "value": 2.0,
+            "quantity": 10
+        }
+    },
+    "fullCash": {
+        "nickels": {
+            "value": 0.05,
+            "quantity": 20
+        },
+        "dimes": {
+            "value": 0.1,
+            "quantity": 20
+        },
+        "quarters": {
+            "value": 0.1,
+            "quantity": 20
+        },
+        "loonies": {
+            "value": 1.0,
+            "quantity": 20
+        },
+        "toonies": {
+            "value": 2.0,
+            "quantity": 20
+        }
+    }
+}
