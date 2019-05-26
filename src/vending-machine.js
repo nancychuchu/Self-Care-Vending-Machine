@@ -100,23 +100,20 @@ class VendingMachine {
 
   refillInv() {
     for (const key in this.inventory) {
-      if (!this.inventory.hasOwnProperty(key)) continue;
-      const product = this.inventory[key];
-      if (product.quantity < this.invFullQuantity) {
-        product.quantity = this.invFullQuantity;
-      }
+      this.inventory[key] = {
+        ...this.inventory[key],
+        quantity: this.invFullQuantity
+      };
     }
-    // console.log(this.inventory);
     return this.inventory;
   }
 
   refillCash() {
     for (const key in this.cash) {
-      if (!this.cash.hasOwnProperty(key)) continue;
-      const coin = this.cash[key];
-      if (coin.quantity < this.coinFullQuantity) {
-        coin.quantity = this.coinFullQuantity;
-      }
+      this.cash[key] = {
+        ...this.cash[key],
+        quantity: this.coinFullQuantity
+      };
     }
     return this.cash;
   }

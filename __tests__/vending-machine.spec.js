@@ -1,15 +1,11 @@
 const VendingMachine = require("../src/vending-machine");
 const contents = require("../src/contents.json");
-// const inventory = require("../src/inventory.json");
-// const fullInventory = require("../src/full-inventory.json");
-// const fullCash = require("../src/full-cash.json");
-// const cash = require("../src/cash.json");
 
 describe("VendingMachine", () => {
   let vendingMachine = [];
   beforeEach(() => {
     vendingMachine = new VendingMachine(contents.inventory, contents.cash);
-  }); //beforeEach gets called everytime before a test is run
+  });
 
   describe("when asked for inventory", () => {
     it("should return inventory object", () => {
