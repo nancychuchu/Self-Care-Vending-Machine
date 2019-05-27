@@ -61,48 +61,101 @@
         }
     },
 
-    "cash": {
-        "nickels": {
+
+
+    "cashAvailable": [{
+            "denomination": "penny",
+            "value": 0.01,
+            "quantity": 10
+        },
+        {
+            "denomination": "nickel",
             "value": 0.05,
             "quantity": 10
         },
-        "dimes": {
+        {
+            "denomination": "dime",
             "value": 0.1,
             "quantity": 10
         },
-        "quarters": {
-            "value": 0.1,
+        {
+            "denomination": "quarter",
+            "value": 0.25,
             "quantity": 10
         },
-        "loonies": {
+        {
+            "denomination": "loonie",
             "value": 1.0,
             "quantity": 10
         },
-        "toonies": {
+        {
+            "denomination": "toonie",
             "value": 2.0,
             "quantity": 10
         }
-    },
-    "fullCash": {
-        "nickels": {
+    ],
+
+    "cashFull": [{
+            "denomination": "penny",
+            "value": 0.01,
+            "quantity": 50
+        },
+        {
+            "denomination": "nickel",
             "value": 0.05,
-            "quantity": 20
+            "quantity": 50
         },
-        "dimes": {
+        {
+            "denomination": "dime",
             "value": 0.1,
-            "quantity": 20
+            "quantity": 50
         },
-        "quarters": {
-            "value": 0.1,
-            "quantity": 20
+        {
+            "denomination": "quarter",
+            "value": 0.25,
+            "quantity": 50
         },
-        "loonies": {
+        {
+            "denomination": "loonie",
             "value": 1.0,
-            "quantity": 20
+            "quantity": 50
         },
-        "toonies": {
+        {
+            "denomination": "toonie",
             "value": 2.0,
-            "quantity": 20
+            "quantity": 50
         }
-    }
+    ],
+    "cashDeficit": [{
+            "denomination": "penny",
+            "value": 0.01,
+            "quantity": 2
+        },
+        {
+            "denomination": "nickel",
+            "value": 0.05,
+            "quantity": 3
+        },
+        {
+            "denomination": "dime",
+            "value": 0.1,
+            "quantity": 4
+        },
+        {
+            "denomination": "quarter",
+            "value": 0.25,
+            "quantity": 3
+        },
+        {
+            "denomination": "loonie",
+            "value": 1.0,
+            "quantity": 3
+        },
+        {
+            "denomination": "toonie",
+            "value": 2.0,
+            "quantity": 2
+        }
+    ]
+
 }
