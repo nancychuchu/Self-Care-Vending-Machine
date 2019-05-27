@@ -10,16 +10,21 @@ describe("VendingMachine", () => {
     );
   });
 
-  describe("when asked for inventory", () => {
-    it("should return inventory object (printed in console)", () => {
-      const result = vendingMachine.printInv();
-      expect(result).toEqual(contents.inventory);
+  describe("printInv()", () => {
+    describe("when asked for inventory", () => {
+      it("should return inventory object (printed in console)", () => {
+        const result = vendingMachine.printInv();
+        expect(result).toEqual(contents.inventory);
+      });
     });
   });
-  describe("when cash is refilled and we check cash", () => {
-    it("should be equal to the full cash", () => {
-      const result = vendingMachine.refillCash();
-      expect(result).toEqual(contents.cashFull);
+
+  describe("refillCash()", () => {
+    describe("when cash is refilled and we check cash", () => {
+      it("should be equal to the full cash", () => {
+        const result = vendingMachine.refillCash();
+        expect(result).toEqual(contents.cashFull);
+      });
     });
   });
 
