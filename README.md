@@ -1,4 +1,4 @@
-# SelfCare Vending Machine (TDD) 🕯
+# Self-Care Vending Machine (TDD) 🕯
 
 Coding mock interview question:
 
@@ -19,12 +19,12 @@ The goal of this project was to create full vending machine functionalities (wit
 <!-- -->
 
 Screenshot of tests:
-![ScreenShot]()
+![ScreenShot](https://github.com/nancychuchu/Vending-Machine/blob/master/public/vending-machine-tests.png)
 
 <!-- -->
 
 Screenshot of Inventory:
-![ScreenShot]()
+![ScreenShot](https://github.com/nancychuchu/Vending-Machine/blob/master/public/vending-machine-print-inventory.png)
 
 <!-- -->
 <!-- -->
@@ -65,6 +65,6 @@ npm test
 
 ## Author
 
-**Nancy Chu**
+**Nancy Chu** Full-Stack Developer
 
 **LinkedIn:** [Nancy Aubrey Chu](https://www.linkedin.com/in/chunancy/)
