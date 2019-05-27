@@ -26,16 +26,14 @@ class VendingMachine {
       return `Enjoy your ${product}!`;
     }
     if (this.inventory[product].price < payment) {
-      // return `Enjoy your ${product}!`;
-      //dispense change function here
       return this.dispenseChg(product, payment, this.inventory[product].price);
     }
   }
 
   dispenseChg(product, payment, price) {
     let diff = payment - price;
-    console.log(diff);
     const change = [];
+    const originalCash = this.cash;
 
     this.cash
       .sort((a, b) => b.value - a.value)
@@ -50,22 +48,32 @@ class VendingMachine {
             quantity: coinChangeNum
           });
           diff -= (coin.value * coinChangeNum).toFixed(2);
-          coin.quantity -= coinChangeNum;
         }
       });
-    let chgString = "";
-    change.map(coin =>
-      coin.quantity > 1
-        ? (chgString += ` ${coin.quantity} ${coin.denomination} coins,`)
-        : (chgString += ` ${coin.quantity} ${coin.denomination} coin,`)
-    );
-    chgString = chgString.substring(0, chgString.length - 1) + ".";
-    console.log(diff);
-    console.log(change);
 
-    console.log(product);
-    console.log(this.cash);
-    return `Enjoy your ${product}! Here is your change in${chgString}`;
+    if (diff < 0.01) {
+      change.map(
+        change =>
+          this.cash.filter(coin => {
+            return coin.denomination === change.denomination;
+          }).quantity - change.quantity
+      );
+      this.inventory[product].quantity--;
+      let chgString = "";
+      change.map(coin =>
+        coin.quantity > 1
+          ? (chgString += ` ${coin.quantity} ${coin.denomination} coins,`)
+          : (chgString += ` ${coin.quantity} ${coin.denomination} coin,`)
+      );
+      chgString = chgString.substring(0, chgString.length - 1) + ".";
+      return `Enjoy your ${product}! Here is your change of $${(
+        payment - price
+      ).toFixed(2)} in${chgString}`;
+    } else {
+      throw new Error(
+        "Sorry, machine does not have enough change. Payment has been rejected, please try again."
+      );
+    }
   }
 
   refillInv() {
@@ -79,12 +87,13 @@ class VendingMachine {
   }
 
   refillCash() {
-    for (const key in this.cash) {
-      this.cash[key] = {
-        ...this.cash[key],
-        quantity: this.coinFullQuantity
-      };
-    }
+    this.cash = this.cash.map(
+      coin =>
+        (coin = {
+          ...coin,
+          quantity: this.coinFullQuantity
+        })
+    );
     return this.cash;
   }
 }

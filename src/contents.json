@@ -1,63 +1,97 @@
 {
     "inventory": {
         "soap": {
+            "slot": "A1",
             "quantity": 10,
             "price": 5.2
         },
         "razor": {
+            "slot": "A2",
             "quantity": 10,
             "price": 3.25
         },
         "candle": {
+            "slot": "A3",
             "quantity": 10,
             "price": 11.0
         },
         "diffuser": {
+            "slot": "B1",
             "quantity": 10,
             "price": 21.2
         },
         "chocolate": {
+            "slot": "B2",
             "quantity": 10,
             "price": 2.5
         },
         "mixtape": {
+            "slot": "B3",
             "quantity": 10,
-            "price": 9.0
+            "price": 10.10
         },
         "loofa": {
+            "slot": "C1",
             "quantity": 0,
-            "price": 9.0
+            "price": 2.25
+        },
+        "teddy": {
+            "slot": "C2",
+            "quantity": 4,
+            "price": 3.45
+        },
+        "lotion": {
+            "slot": "C3",
+            "quantity": 9,
+            "price": 4.56
         }
     },
 
     "fullInventory": {
         "soap": {
+            "slot": "A1",
             "quantity": 15,
             "price": 5.2
         },
         "razor": {
+            "slot": "A2",
             "quantity": 15,
             "price": 3.25
         },
         "candle": {
+            "slot": "A3",
             "quantity": 15,
             "price": 11.0
         },
         "diffuser": {
+            "slot": "B1",
             "quantity": 15,
             "price": 21.2
         },
         "chocolate": {
+            "slot": "B2",
             "quantity": 15,
             "price": 2.5
         },
         "mixtape": {
+            "slot": "B3",
             "quantity": 15,
-            "price": 9.0
+            "price": 10.10
         },
         "loofa": {
+            "slot": "C1",
             "quantity": 15,
-            "price": 9.0
+            "price": 2.25
+        },
+        "teddy": {
+            "slot": "C2",
+            "quantity": 15,
+            "price": 3.45
+        },
+        "lotion": {
+            "slot": "C3",
+            "quantity": 15,
+            "price": 4.56
         }
     },
 
@@ -94,7 +128,6 @@
             "quantity": 10
         }
     ],
-
     "cashFull": [{
             "denomination": "penny",
             "value": 0.01,
