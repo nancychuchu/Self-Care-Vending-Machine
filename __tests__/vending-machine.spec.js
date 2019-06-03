@@ -2,7 +2,7 @@ const VendingMachine = require("../src/vending-machine");
 const contents = require("../src/contents.json");
 
 describe("VendingMachine", () => {
-  let vendingMachine = [];
+  let vendingMachine = null;
   beforeEach(() => {
     vendingMachine = new VendingMachine(
       contents.inventory,
@@ -30,7 +30,7 @@ describe("VendingMachine", () => {
 
   describe("dispenseInv()", () => {
     describe("when customer didn't pay enough for product", () => {
-      it("should return error message", () => {
+      it("should return error message saying 'Payment amount insufficient'", () => {
         expect(() => vendingMachine.dispenseInv("soap", 3)).toThrow(
           "Payment amount insufficient."
         );
@@ -48,14 +48,14 @@ describe("VendingMachine", () => {
     });
 
     describe("when asked to dispense product that's empty", () => {
-      it("should return error", () => {
+      it("should return error saying 'Out of Stock'", () => {
         expect(() => vendingMachine.dispenseInv("loofa", 3)).toThrow(
           "Out of stock"
         );
       });
     });
     describe("when asked to dispense product that doesn't exist in vending machine", () => {
-      it("should return error", () => {
+      it("should return error saying 'Sorry, this product does not exist's", () => {
         expect(() => vendingMachine.dispenseInv("flowers", 3)).toThrow(
           "Sorry, this product does not exist"
         );
@@ -74,7 +74,7 @@ describe("VendingMachine", () => {
       });
     });
     describe("when customer pays extra for product but there's not enough change", () => {
-      it("should return error message", () => {
+      it("should return error message saying 'Machine does not have enough change'", () => {
         expect(() => vendingMachine.dispenseInv("razor", 300)).toThrow(
           "Sorry, machine does not have enough change. Payment has been rejected, please try again."
         );

@@ -18,13 +18,9 @@ The goal of this project was to create full vending machine functionalities (wit
 
 <!-- -->
 
-Screenshot of tests:
-![ScreenShot](https://github.com/nancychuchu/Vending-Machine/blob/master/public/vending-machine-tests.png)
-
-<!-- -->
-
-Screenshot of Inventory:
-![ScreenShot](https://github.com/nancychuchu/Vending-Machine/blob/master/public/vending-machine-print-inventory.png)
+| Screenshot of tests:                                                                                       | Screenshot of Inventory:                                                                                             |
+| ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| ![ScreenShot](https://github.com/nancychuchu/Vending-Machine/blob/master/public/vending-machine-tests.png) | ![ScreenShot](https://github.com/nancychuchu/Vending-Machine/blob/master/public/vending-machine-print-inventory.png) |
 
 <!-- -->
 <!-- -->
